@@ -1,0 +1,20 @@
+/*
+    windowOpener
+    ---------------------------
+
+    Jason Project File
+
+    This file defines the initial state of the MAS
+
+    Jason 2.5.1
+    May 08, 2021 - 21:12:17
+*/
+
+MAS windowOpener {
+
+	infrastructure: Centralised
+
+	environment: WindowEnv
+
+    agents: windowController; external;
+}
