@@ -16,5 +16,5 @@ MAS windowOpener {
 
 	environment: WindowEnv
 
-    agents: windowController; external;
+    agents: windowController; shutterController; tempAgent; weatherAgent;
 }
