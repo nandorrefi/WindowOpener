@@ -21,9 +21,9 @@ public class WindowEnv extends Environment {
 	
 	Random rand = new Random();
 	double cnt = 0;
-	double idealTemp = 22;
-	double rainThreshold = 0.4;
-	double lightThreshold = 0.5;
+	double idealTemp;
+	double rainThreshold;
+	double lightThreshold;
 
 	public void addTempPercept(double sensorTemp, Literal hot, Literal cold){
 		if(sensorTemp < idealTemp){
@@ -58,6 +58,10 @@ public class WindowEnv extends Environment {
 		addPercept(intHot);
 		addPercept(checkSensors);
 		addPercept(notRaining);
+		
+		idealTemp = Double.parseDouble(args[0]);
+		rainThreshold = Double.parseDouble(args[1]);
+		lightThreshold = Double.parseDouble(args[2]);
     }
 
     @Override

@@ -14,7 +14,7 @@ MAS windowOpener {
 
 	infrastructure: Centralised
 
-	environment: WindowEnv
+	environment: WindowEnv(22, 0.4, 0.5)
 
     agents: windowController; shutterController; tempAgent; weatherAgent;
 }
